@@ -1030,17 +1030,37 @@ h2 {
   margin: 16px 0 20px 0;
 }
 /* line 265, ../sass/style.scss */
+.statistics li .icon-bars {
+  color: #5184A5;
+}
+/* line 268, ../sass/style.scss */
+.statistics li .icon-powercord {
+  color: #8572B5;
+}
+/* line 271, ../sass/style.scss */
+.statistics li .icon-bullhorn {
+  color: #4f75b5;
+}
+/* line 274, ../sass/style.scss */
+.statistics li .icon-accessibility {
+  color: #58AB88;
+}
+/* line 277, ../sass/style.scss */
+.statistics li .icon-binoculars {
+  color: #AE5252;
+}
+/* line 280, ../sass/style.scss */
 .statistics li i {
   font-size: 2em;
   margin-top: 20px;
 }
 
-/* line 271, ../sass/style.scss */
+/* line 286, ../sass/style.scss */
 .main-area {
   margin-bottom: 10%;
 }
 
-/* line 274, ../sass/style.scss */
+/* line 289, ../sass/style.scss */
 .top {
   position: fixed;
   bottom: 0;
@@ -1051,7 +1071,7 @@ h2 {
   text-align: center;
   width: 50px;
 }
-/* line 283, ../sass/style.scss */
+/* line 298, ../sass/style.scss */
 .top::after {
   content: '';
   position: absolute;

@@ -1,0 +1,295 @@
+@import "reset";
+@import "font";
+@import "timeline";
+
+body {
+	color: #333;
+	font-family: helvetica,arial,sans-serif;
+}
+p {
+	margin: 0.4em 0;
+}
+@media only screen and (min-width: 1170px) {
+	.cd-timeline-content {
+		padding: 1.2em;
+		padding-bottom: 0;
+	}
+	.cd-timeline-block {
+		margin: 3em 0;
+	}
+}
+.cd-container {
+	width: 70%;
+}
+.cd-timeline-block {
+	h2 {
+		margin-top: 0;
+	}
+	&:nth-child(odd){
+		h2, p {
+			text-align: right;
+		}
+	}
+	&:nth-child(even){
+		h2, p {
+			text-align: left;
+		}
+	}	
+}
+.circle-img {
+	width: 100px;
+	border-radius: 100%;	
+}
+header {
+	height: 50px;
+	line-height: 50px;
+	background: rgba(48, 62, 73, 0.9);
+	position: fixed;
+	top: 0;
+	z-index: 1000;
+	width: 100%;
+	a {
+		color: white;
+	}
+	.logo {
+		float: left;
+	}
+	.navigation {
+		float: right;
+	}
+	.navigation li {
+		display: inline-block;
+		padding: 0 20px;
+	}
+
+}
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.banner {
+	position: relative;
+	text-align: center;
+	padding-top: 50px;
+	color: white;
+	background: url("../img/bg1.jpeg") bottom no-repeat;
+	background-size: cover;
+	height: 600px;
+	margin-bottom: 7%;
+	&:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(0, 0, 0, 0.4);
+	}
+	.content {
+		position: relative;
+		z-index: 1;
+		margin-top: 8%;
+	}
+	img {
+		width: 130px;
+		height: 130px;
+	}
+	.title {
+		margin-top: 2%;
+	}
+}
+.articles {
+	background-color: white;
+	padding: 4em 0;
+}
+h1 {
+	font-size: 2.5em;
+	color: white;
+	text-align: center;
+	margin: 1.4em 0;
+}
+h2 {
+	font-size: 2em;
+	text-align: center;
+	padding-top: 2em;
+	padding-bottom: 1.2em;
+}
+.article {
+	margin: 0 auto;
+	border-bottom: 1px dotted #7f8c97;
+	padding: 1.5em 0;
+	padding-left: 70px;
+	position: relative;
+	.article-author {
+		margin-top: 0;
+	}
+	.article-main-author {
+		font-weight: bold;
+	}
+	.article-date {
+		float: right;
+	}
+	.article-title {
+		font-size: 1.2em;
+		margin: 18px 0;
+	}
+	.article-magazine {
+		font-style: italic;
+		font-weight: bold;
+		color: #7f8c97;
+		margin-bottom: 0;
+	}
+	.article-index {
+		float: right;
+		font-style: normal;
+		font-weight: normal;
+	}
+}
+.articles {
+	li:before {
+	  content: '1';
+	  position: absolute;
+	  left: 0;
+	  background-color: #7f8c97;
+	  border-radius: 50%;
+	  color: white;
+	  width: 40px;
+	  height: 40px;
+	  display: inline-block;
+	  font-size: 22px;
+	  text-align: center;
+	  padding-top: 10px;
+	}
+	li:nth-child(1):before {
+		content: '1';
+	}
+	li:nth-child(2):before {
+		content: '2';
+	}	
+	li:nth-child(3):before {
+		content: '3';
+	}
+	li:nth-child(4):before {
+		content: '4';
+	}
+	li:nth-child(5):before {
+		content: '5';
+	}
+	li:nth-child(6):before {
+		content: '6';
+	}
+	li:nth-child(7):before {
+		content: '7';
+	}
+	li:nth-child(8):before {
+		content: '8';
+	}			
+	li:nth-child(9):before {
+		content: '9';
+	}
+		li:nth-child(10):before {
+		content: '10';
+	}
+	li:nth-child(11):before {
+		content: '11';
+	}
+	li:nth-child(12):before {
+		content: '12';
+	}
+	li:nth-child(13):before {
+		content: '13';
+	}
+	li:nth-child(14):before {
+		content: '14';
+	}			
+	li:nth-child(15):before {
+		content: '15';
+	}
+	li:nth-child(16):before {
+		content: '16';
+	}
+	li:nth-child(17):before {
+		content: '17';
+	}
+	li:nth-child(18):before {
+		content: '18';
+	}			
+	li:nth-child(19):before {
+		content: '19';
+	}
+}
+.contact {
+	padding: 5em 0;
+	text-align: left;
+	width: 450px;
+	margin: 0 auto;
+	h2 {
+		text-align: left;
+	}
+	ul li {
+		font-size: 1.2em;
+		line-height: 34px;	
+	}
+	.tel {
+		color: #333;
+	}
+}
+.footer {
+	background-color: rgb(48, 62, 73);
+	color: #eee;
+	padding: 1em;
+	text-align: center;
+}
+.statistics {
+  display: flex;
+  position: relative;
+  z-index: 2;
+  margin-top: 5%;
+  li {
+  	flex: 1;
+		text-align: center;
+		padding: 20px 0;
+	  background-color: rgba(255, 255, 255, 0.9);
+	  border: 1px solid #ccc;
+	  border-right: none;  	
+	  span {
+	  	display: block
+	  }
+	  .aspect {
+	  	color: #333;
+		  font-weight: bold;
+		  font-size: 1.2em;
+		  margin: 16px 0 20px 0;
+	  }
+	  i {
+	  	font-size: 2em;
+	  	margin-top: 20px;
+	  }
+  }
+}
+.main-area {
+	margin-bottom: 10%;
+}
+.top {
+	position: fixed;
+	bottom: 0;
+	right: 20px;
+	background-color: black;
+	color: white;
+	padding: 14px 0;
+	text-align: center;
+	width: 50px;
+	&::after {
+		content: '';
+		position: absolute;
+		top: -50px;
+		left: 0;
+		border: 25px solid black;
+		display: block;
+		border-top-color: transparent;
+		border-left-color: transparent;
+		border-right-color: transparent;
+		width: 0;
+	}
+}

@@ -9,6 +9,10 @@ body {
 p {
 	margin: 0.4em 0;
 }
+.cd-container {
+	min-width: 900px;
+}
+
 @media only screen and (min-width: 1170px) {
 	.cd-timeline-content {
 		padding: 1.2em;
@@ -38,6 +42,12 @@ p {
 			text-align: left;
 		}
 	}	
+}
+@media only screen and (max-width: 1170px) { 
+	.cd-timeline-block:nth-child(odd) h2, 
+	.cd-timeline-block:nth-child(odd) p {
+		text-align: left;
+	}
 }
 .circle-img {
 	width: 100px;

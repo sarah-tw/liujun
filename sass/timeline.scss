@@ -281,18 +281,31 @@ header h1 {
   border: 7px solid transparent;
   border-right: 7px solid white;
 }
+@media only screen and (max-width: 768px) { 
+  .cd-timeline-content h2 {
+    font-size: 1rem;
+  }  
+  .cd-timeline-content p {
+    margin: 0;
+  }  
+}
+
 @media only screen and (min-width: 768px) {
   .cd-timeline-content h2 {
-    font-size: 20px;
     font-size: 1.25rem;
   }
   .cd-timeline-content p {
-    font-size: 16px;
     font-size: 1rem;
+    margin: 0;
   }
   .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
     font-size: 14px;
     font-size: 0.875rem;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-timeline-content p {
+    margin: 12px 0;
   }
 }
 @media only screen and (min-width: 1170px) {

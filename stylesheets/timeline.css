@@ -339,34 +339,50 @@ header h1 {
   border-right: 7px solid white;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   /* line 285, ../sass/timeline.scss */
   .cd-timeline-content h2 {
-    font-size: 20px;
-    font-size: 1.25rem;
-  }
-
-  /* line 289, ../sass/timeline.scss */
-  .cd-timeline-content p {
-    font-size: 16px;
     font-size: 1rem;
   }
 
-  /* line 293, ../sass/timeline.scss */
+  /* line 288, ../sass/timeline.scss */
+  .cd-timeline-content p {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  /* line 294, ../sass/timeline.scss */
+  .cd-timeline-content h2 {
+    font-size: 1.25rem;
+  }
+
+  /* line 297, ../sass/timeline.scss */
+  .cd-timeline-content p {
+    font-size: 1rem;
+    margin: 0;
+  }
+
+  /* line 301, ../sass/timeline.scss */
   .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
     font-size: 14px;
     font-size: 0.875rem;
   }
 }
 @media only screen and (min-width: 1170px) {
-  /* line 299, ../sass/timeline.scss */
+  /* line 307, ../sass/timeline.scss */
+  .cd-timeline-content p {
+    margin: 12px 0;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  /* line 312, ../sass/timeline.scss */
   .cd-timeline-content {
     margin-left: 0;
     padding: 1.6em;
     width: 45%;
   }
 
-  /* line 304, ../sass/timeline.scss */
+  /* line 317, ../sass/timeline.scss */
   .cd-timeline-content::before {
     top: 24px;
     left: 100%;
@@ -374,12 +390,12 @@ header h1 {
     border-left-color: white;
   }
 
-  /* line 310, ../sass/timeline.scss */
+  /* line 323, ../sass/timeline.scss */
   .cd-timeline-content .cd-read-more {
     float: left;
   }
 
-  /* line 313, ../sass/timeline.scss */
+  /* line 326, ../sass/timeline.scss */
   .cd-timeline-content .cd-date {
     position: absolute;
     width: 100%;
@@ -389,12 +405,12 @@ header h1 {
     font-size: 1rem;
   }
 
-  /* line 321, ../sass/timeline.scss */
+  /* line 334, ../sass/timeline.scss */
   .cd-timeline-block:nth-child(even) .cd-timeline-content {
     float: right;
   }
 
-  /* line 324, ../sass/timeline.scss */
+  /* line 337, ../sass/timeline.scss */
   .cd-timeline-block:nth-child(even) .cd-timeline-content::before {
     top: 24px;
     left: auto;
@@ -403,24 +419,24 @@ header h1 {
     border-right-color: white;
   }
 
-  /* line 331, ../sass/timeline.scss */
+  /* line 344, ../sass/timeline.scss */
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-read-more {
     float: right;
   }
 
-  /* line 334, ../sass/timeline.scss */
+  /* line 347, ../sass/timeline.scss */
   .cd-timeline-block:nth-child(even) .cd-timeline-content .cd-date {
     left: auto;
     right: 122%;
     text-align: right;
   }
 
-  /* line 339, ../sass/timeline.scss */
+  /* line 352, ../sass/timeline.scss */
   .cssanimations .cd-timeline-content.is-hidden {
     visibility: hidden;
   }
 
-  /* line 342, ../sass/timeline.scss */
+  /* line 355, ../sass/timeline.scss */
   .cssanimations .cd-timeline-content.bounce-in {
     visibility: visible;
     -webkit-animation: cd-bounce-2 0.6s;
@@ -430,7 +446,7 @@ header h1 {
 }
 @media only screen and (min-width: 1170px) {
   /* inverse bounce effect on even content blocks */
-  /* line 352, ../sass/timeline.scss */
+  /* line 365, ../sass/timeline.scss */
   .cssanimations .cd-timeline-block:nth-child(even) .cd-timeline-content.bounce-in {
     -webkit-animation: cd-bounce-2-inverse 0.6s;
     -moz-animation: cd-bounce-2-inverse 0.6s;

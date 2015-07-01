@@ -259,11 +259,18 @@ h2 {
 }
 .statistics {
   display: flex;
+  display: -webkit-box;
   position: relative;
   z-index: 2;
   margin-top: 5%;
   li {
   	flex: 1;
+	  -webkit-box-flex: 1; // Webkit Old
+	  -moz-box-flex: 1; // Mozilla Old
+	  -webkit-flex: 1; // Webkit Standard
+	  -moz-flex: 1; // Mozilla Standard
+	  -ms-flex: 1; // IE 10 Mid, IE 11 Standard
+	  flex: 1;  	
 		text-align: center;
 		padding: 20px 0;
 	  background-color: rgba(255, 255, 255, 0.9);
@@ -327,7 +334,12 @@ h2 {
 }
 @media screen and (max-width: 768px) { 
 	.statistics {
-		flex-direction: column;
+		-webkit-box-orient: column; // Webkit Old
+		-moz-box-orient: column;
+		-webkit-box-direction: column; // Webkit Old
+  	-moz-box-direction: column; // Mozilla Old
+  	flex-direction: column;
+  	min-height: 0;
 	}
 	.cd-container {
 		width: 95%;

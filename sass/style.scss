@@ -245,6 +245,7 @@ h2 {
 	margin: 0 auto;
 	h2 {
 		text-align: left;
+		font-size: 24px;
 	}
 	ul li {
 		font-size: 1.2em;
@@ -396,5 +397,25 @@ h2 {
 	}
 	.article .article-title {
 		  margin: 8px 0;
+	}
+}
+.recruit {
+	padding: 7% 0;
+	p {
+		margin-top: 20px;
+		text-indent: 40px;
+		line-height: 24px;
+	}
+}
+.contact {
+	background-color: white;
+	a {
+		color: #993369;
+	}
+	li {
+		color: #333;
+	}
+	span {
+		color: #666;
 	}
 }
